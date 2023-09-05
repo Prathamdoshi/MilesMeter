@@ -44,7 +44,8 @@ def submit_button_event_handler():
     km = 0
     CONVERTER = 1.609344
 
-    if miles_input.get() == "": # if user entered an empty string then handle it by not doing anything
+    if miles_input.get() == "": # if user entered an empty string then handle by setting it to default 0
+        result_label["text"] = 0
         pass
     else:
         miles = int(miles_input.get()) # convert to int
